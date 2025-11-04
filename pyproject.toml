@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plot-flow"
+version = "0.0.1"
+description = "A minimal Python package for defining and visualizing simple pipeline graphs using decorators."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"  # ✅ SPDX-style license (modern format)
+authors = [{ name = "Your Name", email = "you@example.com" }]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Framework :: Matplotlib"
+]
+
+keywords = [
+    "matplotlib",
+    "data-analysis",
+    "plot",
+    "schema",
+    "visualization",
+    "data-engineering"
+]
+
+dependencies = [
+    "networkx",
+    "matplotlib",
+    "pydot",
+]
+
+[project.urls]
+Homepage = "https://github.com/Rudra-G-23/plot-flow"
+Issues = "https://github.com/Rudra-G-23/plot-flow/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
